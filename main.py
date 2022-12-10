@@ -2,6 +2,15 @@ import streamlit as st
 import  requests
 import pandas as pd
 import os
+import numpy as np
+import altair as alt
+import urllib.request
+import base64
+st.title("Grupo 1")
+st.markdown("""El grupo número 1 está conformado por estudiantes del quinto ciclo de la Carrera Profesional de Ingeniería Ambiental de la Univerisdad Peruana Cayetano Heredia:""")
+from PIL import Image
+image = Image.open('Integrantes_grupo1.jpeg')
+st.image(image, caption='Fernando Jara' ,use_column_width=True)
 file_data = "TB_CENTRO_VACUNACION.csv"
 full_path_data=os.path.join(os.path.join(__file__,"../"),file_data)
 peru_locations = "TB_UBIGEOS.csv"
