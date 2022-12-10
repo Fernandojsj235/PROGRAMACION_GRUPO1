@@ -2,6 +2,11 @@ import streamlit as st
 import  requests
 import pandas as pd
 import os
+st . título ( "Grupo 1" )
+st . markdown ( """El grupo número 1 está conformado por estudiantes del quinto ciclo de la Carrera Profesional de Ingeniería Ambiental de la Universidad Peruana Cayetano Heredia:""" )
+de  imagen de importación PIL  
+imagen  =  Imagen . abierto ( 'Integrantes_grupo1.jpeg' )
+st . image ( imagen , pie de foto = 'Fernando Jara,Josselyn Santi, Nancy Perez, Jose vega' , use_column_width = True )
 file_data = "TB_CENTRO_VACUNACION.csv"
 full_path_data=os.path.join(os.path.join(__file__,"../"),file_data)
 peru_locations = "TB_UBIGEOS.csv"
