@@ -11,6 +11,12 @@ st.markdown("""El grupo número 1 está conformado por estudiantes del quinto ci
 from PIL import Image
 image = Image.open('Integrantes_grupo1.jpeg')
 st.image(image, caption='Integrantes del grupo 1' ,use_column_width=True)
+st.markdown("""Esta tabla contiene la lista de los centros de vacunación programadas según 
+entidad y ubicación geográfica a nivel nacional del territorio peruano.""")
+
+from PIL import Image
+image = Image.open('Centros_vacunación.jpg')
+st.image(image, caption='Centro de vacunación en Lima', use_column_width=True)
 file_data = "TB_CENTRO_VACUNACION.csv"
 full_path_data=os.path.join(os.path.join(__file__,"../"),file_data)
 peru_locations = "TB_UBIGEOS.csv"
