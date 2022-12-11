@@ -31,7 +31,10 @@ loc_info = requests.get(f'https://ipapi.co/{ip}/json/').json()
 data = pd.read_csv(file_data)
 st.title("Dashboard")
 st.table(data.describe())
-
+st.title("Guia del usuario:")
+st.markdown("""
+- Gráfico de dispersión de los centros de vacunación, según el departamento a la cual pertenece. Para ello el usuario debera seleccionar un departamento, después se mostrarán los puntos en donde se encuentra el centro de vacunación
+- Gráfico de dispersión de los centros de vacunación según la entidad, a la cual pertenece. Para ello el usuario deberá seleccionar el una entidad administradora, por ejemplo, DIRESA(Dirección Reginal de Salud)""")
 st.title("Gráfico de centros de vacunación según el departamento, a la cual pertenece")
 opt = st.selectbox(label="Elija Departamaento",options=data_peru.groupby("region")["fips"].count().index.values)
 id_u = data_peru.loc[data_peru["region"] == opt,["id_ubigeo"]].values[0,0]
@@ -43,7 +46,7 @@ data_location=data_location.drop(data_location[data_location["lon"] > -69].index
 st.map(data_location,zoom=11.25)
 
 st.title("Gráfico de centros de vacunacion según la entidad que administra")
-opt = st.selectbox(label="Elija Departamaento",options=data.groupby("entidad_administra")["entidad_administra"].count().index.values)
+opt = st.selectbox(label="Elija a la entidad administradora",options=data.groupby("entidad_administra")["entidad_administra"].count().index.values)
 id_v = data.loc[data["entidad_administra"] == opt,["id_ubigeo"]].values[0,0]
 print(id_v)
 
