@@ -6,6 +6,7 @@ import numpy as np
 import altair as alt
 import urllib.request
 import base64
+st.title("CENTROS DE VACUNACIÓN(COVID-19)")
 st.title("Equipo 01:")
 st.markdown("""El grupo número 1 está conformado por estudiantes del quinto ciclo de la Carrera Profesional de Ingeniería Ambiental de la Univerisdad Peruana Cayetano Heredia:
 - Jara Garcia, Fernando ALipio
