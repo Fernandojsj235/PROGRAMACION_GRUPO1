@@ -6,8 +6,12 @@ import numpy as np
 import altair as alt
 import urllib.request
 import base64
-st.title("Grupo 1")
-st.markdown("""El grupo número 1 está conformado por estudiantes del quinto ciclo de la Carrera Profesional de Ingeniería Ambiental de la Univerisdad Peruana Cayetano Heredia:""")
+st.title("Equipo 01:")
+st.markdown("""El grupo número 1 está conformado por estudiantes del quinto ciclo de la Carrera Profesional de Ingeniería Ambiental de la Univerisdad Peruana Cayetano Heredia:
+- Jara Garcia, Fernando ALipio
+-Perez Noriega, Nancy
+- Santi Huayllani, Josselyn Alicia 
+-Vega Rojas, Jose Mauricio""")
 from PIL import Image
 image = Image.open('Integrantes_grupo1.jpeg')
 st.image(image, caption='Integrantes del grupo 1' ,use_column_width=True)
