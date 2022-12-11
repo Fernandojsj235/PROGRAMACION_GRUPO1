@@ -38,14 +38,7 @@ st.table(data.describe())
 st.title("Guia del usuario:")
 st.markdown("""
 - Gráfico de dispersión de los centros de vacunación, según el departamento a la cual pertenece. Para ello el usuario debera seleccionar un departamento, después se mostrarán los puntos en donde se encuentra el centro de vacunación
-- Gráfico de dispersión de los centros de vacunación según la entidad administradora, a la cual pertenece. Para ello el usuario deberá seleccionar el una entidad administradora:Dirección Reginal de Salud (DIRESA),
-Puesto de Salud,
-Ministeriode Salud(MINSA),
-Direccion Regional de Salud de Lima (DIRESA Lima),
-Seguro Social de Salud (ESSALUD),
-Privado ,
-Sistema Metropolitano de la Solidaridad (SISOL),
-Hospitales""")
+- Gráfico de dispersión de los centros de vacunación según la entidad administradora, a la cual pertenece. Para ello el usuario deberá seleccionar el una entidad administradora:Dirección Reginal de Salud (DIRESA), Puesto de Salud, Ministerio de Salud(MINSA), Direccion Regional de Salud de Lima (DIRESA Lima), Seguro Social de Salud (ESSALUD), Privado , Sistema Metropolitano de la Solidaridad (SISOL), Hospitales""")
 st.title("Gráfico de centros de vacunación según el departamento, a la cual pertenece")
 opt = st.selectbox(label="Elija Departamaento",options=data_peru.groupby("region")["fips"].count().index.values)
 id_u = data_peru.loc[data_peru["region"] == opt,["id_ubigeo"]].values[0,0]
