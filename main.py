@@ -29,7 +29,7 @@ data_peru = pd.read_csv(peru_locations)
 ip = requests.get("https://api64.ipify.org?format=json").json()["ip"]
 loc_info = requests.get(f'https://ipapi.co/{ip}/json/').json()
 data = pd.read_csv(file_data)
-st.title("Descripcion de la Data")
+st.title("Dashboard")
 st.table(data.describe())
 
 st.title("Lugares de Vacunacion Segun Region")
