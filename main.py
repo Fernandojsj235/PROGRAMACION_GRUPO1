@@ -32,7 +32,7 @@ data = pd.read_csv(file_data)
 st.title("Dashboard")
 st.table(data.describe())
 
-st.title("Lugares de Vacunacion Segun Region")
+st.title("Gráfico de centros de vacunación según el departamento, a la cual pertenece")
 opt = st.selectbox(label="Elija Departamaento",options=data_peru.groupby("region")["fips"].count().index.values)
 id_u = data_peru.loc[data_peru["region"] == opt,["id_ubigeo"]].values[0,0]
 # print(id_u)
@@ -42,7 +42,7 @@ print(data_location[data_location["lon"] > 0].index.values)
 data_location=data_location.drop(data_location[data_location["lon"] > -69].index.values)
 st.map(data_location,zoom=11.25)
 
-st.title("Lugares de Vacunacion Segun Entidad que Suminstra")
+st.title("Gráfico de centros de vacunacion según la entidad que administra")
 opt = st.selectbox(label="Elija Departamaento",options=data.groupby("entidad_administra")["entidad_administra"].count().index.values)
 id_v = data.loc[data["entidad_administra"] == opt,["id_ubigeo"]].values[0,0]
 print(id_v)
