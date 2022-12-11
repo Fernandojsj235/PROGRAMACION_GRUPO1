@@ -34,11 +34,10 @@ st.table(data.describe())
 st.title("Guia del usuario:")
 st.markdown("""
 - Gráfico de dispersión de los centros de vacunación, según el departamento a la cual pertenece. Para ello el usuario debera seleccionar un departamento, después se mostrarán los puntos en donde se encuentra el centro de vacunación
-- Gráfico de dispersión de los centros de vacunación según la entidad administradora, a la cual pertenece. Para ello el usuario deberá seleccionar el una entidad administradora:
-Dirección Reginal de Salud (DIRESA),
+- Gráfico de dispersión de los centros de vacunación según la entidad administradora, a la cual pertenece. Para ello el usuario deberá seleccionar el una entidad administradora:Dirección Reginal de Salud (DIRESA),
 Puesto de Salud,
-Ministerio de Salud(MINSA),
-Direccion Regianl de Salud Lima (DIRESA Lima),
+Ministeriode Salud(MINSA),
+Direccion Regional de Salud de Lima (DIRESA Lima),
 Seguro Social de Salud (ESSALUD),
 Privado ,
 Sistema Metropolitano de la Solidaridad (SISOL),
