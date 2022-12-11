@@ -13,6 +13,10 @@ st.markdown("""El grupo número 1 está conformado por estudiantes del quinto ci
 - Perez Noriega, Nancy
 - Santi Huayllani, Josselyn Alicia 
 - Vega Rojas, Jose Mauricio""")
+st.title("CONTEXTO:")
+st.markdown(""" Frente a esta pandemia se inició la búsqueda de medicamentos contra el COVID-19, en este caso de vacunas, estás ayudan a proteger a las personas porque crea una respuesta inmunitaria sin la posibilidad de enfermarse gravemente o tener afecciones posteriores al COVID-19. La vacuna es gratuita y viene siendo aplicada a todas las personas mayores de 5 años, peruanas o extranjeras, residentes en el Perú.
+El presente informe tiene como objetivo dar a conocer a la ciudadanía nuestra aplicación que le ayudará a identificar los puntos de vacunación; para ello haremos usos de los siguientes lenguajes y base de datos de programación como Python, el cual es un lenguaje de programación ampliamente utilizado en la aplicaciones de web, el desarrollo de software, la ciencia de datos y el machine learning. Contaremos con el uso de panda, el cual es una biblioteca de software escrita para el lenguaje de programación Python para la manipulación y el análisis de datos. Así mismo haremos uso de Github, el cual  es una de las principales plataformas para crear proyectos abiertos de herramientas y aplicaciones, y se caracteriza sobre todo por ser buen repositorio, el código de los proyectos que sean abiertos.  Finalmente contaremos con Streamlit es un framework de Python de código abierto que permite de manera sencilla e integrada desarrollar aplicaciones gracias a la interacción con otras librerías para su empleo en campos de la teledetección, ciencia de datos, etc.
+""")
 from PIL import Image
 image = Image.open('Integrantes_grupo1.jpeg')
 st.image(image, caption='Integrantes del grupo 1' ,use_column_width=True)
