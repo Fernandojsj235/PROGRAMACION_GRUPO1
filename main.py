@@ -12,7 +12,7 @@ from PIL import Image
 image = Image.open('Integrantes_grupo1.jpeg')
 st.image(image, caption='Integrantes del grupo 1' ,use_column_width=True)
 st.markdown("""Esta tabla contiene la lista de los centros de vacunación programadas según 
-entidad y ubicación geográfica a nivel nacional del territorio peruano.""")
+entidad y ubicación geográfica(longitud y latitud) a nivel nacional del territorio peruano.""")
 
 from PIL import Image
 image = Image.open('Centros_vacunación.jpg')
